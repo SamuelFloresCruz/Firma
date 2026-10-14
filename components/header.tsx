@@ -2,14 +2,13 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { FileCheck2, History, Menu, PenLine, ShieldCheck, X } from "lucide-react";
+import { FileCheck2, Menu, PenLine, ShieldCheck, X } from "lucide-react";
 import { useState } from "react";
 import { AuthButton } from "@/components/auth-button";
 
 const links = [
   { href: "/firmar", label: "Firmar", icon: PenLine },
   { href: "/verificar", label: "Verificar", icon: FileCheck2 },
-  { href: "/historial", label: "Historial", icon: History },
 ];
 
 export function Header() {

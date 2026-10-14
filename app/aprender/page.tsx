@@ -50,7 +50,7 @@ export default function LearnPage() {
 
         <section className="learn-section" id="alcance">
           <h2>Qué implementa esta versión</h2>
-          <p>Firma y verificación local con Web Crypto; JWS compacto; contenedores verificables para PDF, P7S y XML; generación temporal de pares RSA; historial de metadatos e integración opcional con Supabase.</p>
+          <p>Firma y verificación local con Web Crypto; JWS compacto; contenedores verificables para PDF, P7S y XML; generación temporal de pares RSA y autenticación opcional con Supabase.</p>
           <p>Los archivos creados con otros sistemas se identifican y se informa cuando requieren un validador compatible con su estándar.</p>
           <Link href="/firmar" className="button button-primary" style={{ marginTop: 8 }}>Firmar un documento <ArrowRight size={17} /></Link>
         </section>

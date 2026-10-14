@@ -80,7 +80,7 @@ export function AuthButton() {
             <button className="icon-button modal-close" onClick={() => setOpen(false)} aria-label="Cerrar"><X size={20} /></button>
             <span className="eyebrow">Cuenta opcional</span>
             <h2 id="auth-title">{mode === "login" ? "Continúa donde lo dejaste" : "Crea tu espacio personal"}</h2>
-            <p>La cuenta solo sincroniza tu historial. Los documentos y las llaves siguen procesándose localmente.</p>
+            <p>Accede de forma segura con tu cuenta. Los documentos y las llaves permanecen en tu dispositivo.</p>
             <form onSubmit={submit} className="stack-form">
               <label>Correo electrónico<input name="email" type="email" required maxLength={254} autoComplete="email" placeholder="tu@correo.com" /></label>
               <label>Contraseña<input name="password" type="password" minLength={6} required autoComplete={mode === "login" ? "current-password" : "new-password"} placeholder="Mínimo 6 caracteres" /></label>

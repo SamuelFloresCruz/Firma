@@ -1,6 +1,6 @@
 # Firma Clara
 
-Laboratorio universitario para crear y verificar evidencias de firma digital en PDF, P7S, XML y JWS. La aplicación está construida con Next.js, React y TypeScript, y se puede desplegar gratuitamente en Vercel. Supabase es opcional y se utiliza solo para autenticación e historial.
+Laboratorio universitario para crear y verificar evidencias de firma digital en PDF, P7S, XML y JWS. La aplicación está construida con Next.js, React y TypeScript, y se puede desplegar gratuitamente en Vercel. Supabase es opcional y se utiliza para autenticación y registro técnico de actividad.
 
 > Este proyecto es didáctico. No emite certificados legales ni reemplaza PAdES, CAdES, XAdES, una TSA o la infraestructura de certificación boliviana.
 
@@ -13,8 +13,7 @@ Laboratorio universitario para crear y verificar evidencias de firma digital en 
 - Detección conservadora de firmas externas: se reportan como indeterminadas.
 - Rechazo de archivos que ya contienen una firma para evitar firmas superpuestas incompatibles.
 - Protección criptográfica del contenido y de los metadatos del firmante en las nuevas evidencias.
-- Historial local de metadatos y huellas, nunca del contenido.
-- Autenticación e historial remoto opcionales con Supabase.
+- Autenticación opcional con Supabase.
 - Diseño responsivo y accesible.
 
 ## Requisitos
@@ -120,7 +119,7 @@ Esta separación es intencional: evita afirmar compatibilidad normativa que un p
 app/                  páginas Next.js
 components/           interfaz y proveedores de estado
 lib/crypto.ts         firma, verificación y llaves
-lib/history.ts        historial local/Supabase
+lib/history.ts        registro local/Supabase
 lib/supabase/         cliente opcional
 supabase/schema.sql   tablas, índices y políticas RLS
 types/                contratos TypeScript
